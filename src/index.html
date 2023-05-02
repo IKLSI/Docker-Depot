@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Partage de fichiers</title>
+		<style>
+			body 
+			{
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+			}
+			header 
+			{
+				background-color: #333;
+				color: #fff;
+				padding: 20px;
+				text-align: center;
+			}
+			.container 
+			{
+				margin: 50px auto;
+				padding: 20px;
+				width: 80%;
+				border: 1px solid #333;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			}
+			h1, form, input
+			{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Bienvenue sur notre site de partage de fichiers</h1>
+			<p>Ici, vous pouvez uploader n'importe quel fichier, il sera enregistré</p>
+		</header>
+		<div class="container">
+			<h1>Partage de fichiers</h1>
+			<form action="/partage" method="POST" enctype="multipart/form-data">
+				<input type="file" name="file"/><br /><br />
+				<button type="submit">Télécharger</button>
+			</form>
+		</div><br />
+		<div class="container">
+			<h2>Liste des fichiers téléchargés :</h2>
+			<ul id="fileList">	
+			</ul>
+		</div>
+	</body>
+</html>
