@@ -17,7 +17,7 @@
 * Se placer dans le dossier docker-sae-203-equipe12-depot puis dans le dossier src
 * Lancer la commande suivante : <b>docker build -t nom_du_container -f DockerFile chemin/absolu</b>
 * Puis la commande suivante : <b>docker run -p 3000:3000 -v $(pwd)/uploads:/docker/uploads nom_du_container</b> sous Linux
-* Sous Windows <b>docker run -p 3000:3000 -v chemin_absolu/uploads:/app/uploads nom_du_container</b>
+* Sous Windows <b>docker run -p 3000:3000 -v chemin_absolu/uploads:/docker/uploads nom_du_container</b>
 * Enfin, ouvrir un navigateur et taper l'adresse suivante : <b>localhost:3000</b>
 
 ## Autres projets 
