@@ -1,7 +1,7 @@
 {
-	"name": "file-sharing-app",
+	"name": "depot-docker-equipe12",
 	"version": "1.0.0",
-	"description": "Creation service partage de fichiers",
+	"description": "Creation service depot de fichiers",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js"

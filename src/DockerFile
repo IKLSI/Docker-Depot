@@ -15,7 +15,7 @@ RUN apt update && \
 
 # Créer un dossier pour l'application
 
-WORKDIR /app
+WORKDIR /docker
 
 # Copie le fichier de configuration package.json et le dossier courant dans le dossier précedent
 COPY package*.json ./
